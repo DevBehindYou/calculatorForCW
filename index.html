@@ -35,7 +35,7 @@
 
         if (siteTraffic && currentCR) {
             var potentialIncrease = (siteTraffic * (currentCR / 100)) * impfact; // Assuming a improvement factor
-            document.getElementById('result').innerHTML = "You could potentially increase "+ Math.round(impfact*100) + "% convert an additional " + Math.round(potentialIncrease) + " visitors.";
+            document.getElementById('result').innerHTML = "You could potentially increase "+ Math.round(impfact*100) + "% & Convert an additional " + Math.round(potentialIncrease) + " visitors.";
         } else {
             document.getElementById('result').innerHTML = "Please enter valid values for both fields.";
         }
