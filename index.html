@@ -8,17 +8,18 @@
 <body>
     <!-- CR Calculator -->
     <div id="cr-calculator" style="max-width: 400px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; background-color: #f9f9f9;">
-        <h3>Calculate Your CR Improvement</h3>
-        <label for="siteTraffic">Site Traffic (Visitors)/Month:</label><br>
-        <input type="number" id="siteTraffic" placeholder="Enter your site traffic" style="width: 100%; padding: 8px; margin: 10px 0;" required><br>
+        <h3 style="text-align: center; font-family: 'Roboto', sans-serif;">Calculate Your CR Improvement</h3>
 
-        <label for="currentCR">Current CR (%):</label><br>
-        <input type="number" id="currentCR" placeholder="Enter your current CR" style="width: 100%; padding: 8px; margin: 10px 0;" required><br>
+        <label style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 14px;" for="siteTraffic">Site Traffic (Visitors)/Month:</label><br>
+        <input type="number" id="siteTraffic" placeholder="Enter your site traffic" style="width: 95%; padding: 8px; margin: 10px 0; border-radius: 5px;" required><br>
 
-        <button onclick="calculateCR()" style="width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 5px;">Calculate Improvement</button>
+        <label style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 14px;" for="currentCR">Current CR (%):</label><br>
+        <input type="number" id="currentCR" placeholder="Enter your current CR" style="width: 95%; padding: 8px; margin: 10px 0; border-radius: 5px;" required><br>
 
-        <h3>Estimated Potential CR Increase</h3>
-        <p id="result" style="padding: 10px; background-color: #ffe1ff; border-radius: 5px; text-align: center;">Enter values to see the result</p>
+        <button onclick="calculateCR()" style="width: 100%; padding: 10px; background-color: #007bff; color: white; border: none; border-radius: 9px;">Calculate Improvement</button>
+
+        <h3 style="text-align: center; font-family: 'Roboto', sans-serif;">Estimated Potential CR Increase</h3>
+        <p id="result" style="padding: 10px; background-color: #ffe1ff; border-radius: 5px; text-align: center;">Enter values to see the Result</p>
     </div>
 
     <script>
