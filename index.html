@@ -68,7 +68,7 @@
         {impfact = 0.35}
         else if(currentCR >= 0.07)
         {impfact = 0.55}
-        else if(currentCR >= 0.05)
+        else if(currentCR >= 0.04)
         {impfact = 0.75}
         else
         {impfact = 1.25}
@@ -77,7 +77,8 @@
             var currentConversions = (siteTraffic * (currentCR / 100));
             var potentialIncrease = currentConversions + currentConversions * impfact;
 
-            document.getElementById('result').innerHTML = "You could potentially boost your traffic by " + Math.round(impfact * 100) + "% and convert " + Math.round(potentialIncrease) + "+ visitors." + "<br><a href='https://content-whale.com/'>Connect with us today and let's make it happen!</a>";
+            document.getElementById('result').innerHTML = "You could potentially boost your traffic by " + Math.round(impfact * 100) + "% and convert " + Math.round(potentialIncrease) + "+ visitors." + "<br><a href='https://content-whale.com/' target='_blank'>Connect with us today and let's make it happen!</a>
+";
 
             // Update the chart data
             updateChart(currentConversions, potentialIncrease);
@@ -121,7 +122,7 @@
                         }
                     }
                 },
-                cutout: '60%',
+                cutout: '57%',
             }
         });
     }
